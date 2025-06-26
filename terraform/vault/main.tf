@@ -22,7 +22,6 @@ resource "vault_approle_auth_backend_role" "cloudflared" {
   depends_on     = [vault_auth_backend.approle]
 }
 
-
 resource "vault_approle_auth_backend_role_secret_id" "cloudflared" {
   role_name  = vault_approle_auth_backend_role.cloudflared.role_name
   backend    = vault_auth_backend.approle.path
