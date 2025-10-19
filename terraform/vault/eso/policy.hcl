@@ -1,3 +1,3 @@
-path "secret/data/cloudflared/*" {
+path "external-secrets/data/*" {
   capabilities = ["read", "list"]
 }

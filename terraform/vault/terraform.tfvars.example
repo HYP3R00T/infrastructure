@@ -1,5 +1,5 @@
 vault_address        = "" # "http://vault.homelab.internal"
 vault_token          = "" # the root token
 kubernetes_host      = "" # kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}'
-kubernetes_ca_cert   = "" # kubectl -n vault get secret vault-token-reviewer-token -o jsonpath='{.data.token}' | base64 --decode
-token_reviewer_jwt   = "" # kubectl -n vault get secret vault-token-reviewer-token -o jsonpath='{.data.ca\.crt}' | base64 --decode
+kubernetes_ca_cert   = "" # kubectl -n vault get secret vault-token-reviewer-token -o jsonpath='{.data.ca\.crt}' | base64 --decode
+token_reviewer_jwt   = "" # kubectl -n vault get secret vault-token-reviewer-token -o jsonpath='{.data.token}' | base64 --decode

@@ -9,12 +9,6 @@ variable "vault_token" {
   sensitive   = true
 }
 
-variable "policy_file_path" {
-  description = "Path to the Vault policy file"
-  type        = string
-  default     = "../../vault/policies/cloudflared-policy.hcl"
-}
-
 variable "kubernetes_host" {
   type        = string
   description = "Kubernetes API server URL"
